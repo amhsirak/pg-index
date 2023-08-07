@@ -1,4 +1,4 @@
-CREATE TABLE customers(first_name VARCHAR(50), last_name VARCHAR(50), mobile_no INT, country VARCHAR(50))
+CREATE TABLE customers(first_name VARCHAR(50), last_name VARCHAR(50), mobile_no INTEGER, country VARCHAR(50))
 
 INSERT INTO customers (first_name, last_name, mobile_no, country)
 SELECT substr(md5(random()::text), 1, 10),

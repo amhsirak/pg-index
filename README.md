@@ -1,5 +1,5 @@
 ### What is this?
-Simple experiment to apply database indexing to improve query performance for a hypothetical `customer` table, containing 50 million rows on a `country` column. Uses partial indexes.
+Simple experiment to apply database indexing to improve query performance for a hypothetical `customer` table containing 50 million rows. Partial Index is created on `country` column, containing two distinct values - 'India' & 'United Kingdom'
 
 ### Test Environment
 - PostgreSQL 13

@@ -6,3 +6,5 @@ SELECT substr(md5(random()::text), 1, 10),
        (random() * 70 + 10)::integer,
 	   (CASE WHEN random() < 0.5 THEN 'India' ELSE 'United Kingdom' END)
 FROM generate_series(1, 50000000);
+
+CREATE INDEX idx_country ON customers(country);

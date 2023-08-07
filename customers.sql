@@ -11,3 +11,6 @@ EXPLAIN ANALYZE
 SELECT * FROM customers WHERE country='United Kingdom';
 
 CREATE INDEX idx_country ON customers(country);
+
+EXPLAIN ANALYZE
+SELECT * FROM customers WHERE country='United Kingdom';

@@ -10,7 +10,7 @@ FROM generate_series(1, 50000000);
 EXPLAIN ANALYZE
 SELECT * FROM customers WHERE country='United Kingdom';
 
-CREATE INDEX idx_country ON customers(country);
+CREATE INDEX idx_partial_country ON customers (country) WHERE country IN ('India', 'United Kingdom')
 
 EXPLAIN ANALYZE
 SELECT * FROM customers WHERE country='United Kingdom';
